@@ -1,17 +1,20 @@
 # 1 Liste des clients (toutes les informations) dont le nom commence par un D  
+``` sql
 SELECT noCli,nom,prenom,adresse,cpo,ville 
 FROM clients 
-WHERE nom LIKE 'D%';
+WHERE nom LIKE 'D%';```
 
 # 2 Nom et prénom de tous les clients
+```sql
 SELECT nom,prenom
-FROM clients;
+FROM clients;```
 
 # 3 Liste des fiches (n°, état) pour les clients (nom, prénom) qui habitent en Loire Atlantique (44)
+``` sql
 SELECT noFic,etat,nom,prenom    
 FROM clients
 inner JOIN fiches ON clients.noCli=fiches.noCli
-where cpo like '44%';
+where cpo like '44%';```
 
 # 4 Détail de la fiche n°1002 
 SELECT 
