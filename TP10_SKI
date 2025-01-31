@@ -1,7 +1,8 @@
 # 1 Liste des clients (toutes les informations) dont le nom commence par un D
+``` SQL 
 SELECT noCli,nom,prenom,adresse,cpo,ville 
 FROM clients 
-WHERE nom LIKE 'D%';
+WHERE nom LIKE 'D%';```
 
 # 2 Nom et prénom de tous les clients
 SELECT nom,prenom
